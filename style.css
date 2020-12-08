@@ -2,10 +2,11 @@ body{
 	color: black;
 	font-family: Arial;
 	margin: auto;
+	background-color: #DCDCDC;
 }
 
 div.bandeau{
-	background-color:#E6E6E6;
+	background-color:#FF0000;
 	border-bottom:1px black solid;
 	margin-top: auto;
 	margin-bottom:auto;
@@ -23,6 +24,7 @@ div.bandeau button{
 
 div.contenu{
 	margin: 20px;
+	
 }
 
 h1{
@@ -33,9 +35,9 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-	border: 2px orange solid;
+	border: 2px black solid;
 	border-radius: 10px;
-	background-color: orange;
+	background-color: FF0000;
 	color:white;
-	box-shadow: 6px -6px 0px grey
+	box-shadow: 6px -6px 0px 
 }
