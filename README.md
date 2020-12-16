@@ -17,3 +17,6 @@ Début du projet faire l'accueil et le debut du Java script.
 Selection des image pour l'accueil du site 
 
 Mise en place des couleurs et des photo pour dynamiser le site 
+
+### Séance du 16 décembre 2020
+
