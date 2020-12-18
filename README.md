@@ -19,4 +19,14 @@ Selection des image pour l'accueil du site
 Mise en place des couleurs et des photo pour dynamiser le site 
 
 ### Séance du 16 décembre 2020
+création de la page du calculateur
 
+intégration de la page
+
+### Séance du 18 décembre 2020
+
+création des zones de texte pour le calculateur
+
+Remplissage de la page d'acceuil 
+
+déut de la création du code pour le calculateur 
