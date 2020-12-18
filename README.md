@@ -23,6 +23,8 @@ création de la page du calculateur
 
 intégration de la page
 
+création du logo du site
+
 ### Séance du 18 décembre 2020(1h)
 
 création des zones de texte pour le calculateur de moyennes BAC
@@ -30,3 +32,5 @@ création des zones de texte pour le calculateur de moyennes BAC
 Remplissage de la page d'acceuil 
 
 début de la création du code pour le calculateur 
+
+préparation de l'incorporation du logo qui aura lieu ce week-end
