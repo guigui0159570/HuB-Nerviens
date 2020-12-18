@@ -25,8 +25,8 @@ intégration de la page
 
 ### Séance du 18 décembre 2020
 
-création des zones de texte pour le calculateur
+création des zones de texte pour le calculateur de moyennes BAC
 
 Remplissage de la page d'acceuil 
 
-déut de la création du code pour le calculateur 
+début de la création du code pour le calculateur 
