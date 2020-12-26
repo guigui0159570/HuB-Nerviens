@@ -1,0 +1,47 @@
+<html>
+		<head>
+				<title>HuB Nerviens - Calculateur de moyenne pour le bacw</title>
+				<meta charset="UTF-8">
+				<link rel="icon" type="image/png" sizes="16x16" href="Photos\icone.png">
+				<link rel="stylesheet" href="style.css">
+		</head>
+	<body>
+		<div class='bandeau'>
+			<table>
+				<tr>
+					<td><img src="Photos\icone.png"></td>
+					<td><button onclick="navig('Accueil')">Accueil</button></td>
+					<td><img src="Photos\logo-neo-HDF.svg"></td>
+					<td><button onclick="ENT('CAS EP')">Élève/Parent</button></td>
+					<td><button onclick="ENT('CAS PROF')">Professeur</button></td>
+					<td><button onclick="aremplir">sign in</button></td>
+				</tr>
+			</table>
+		</div>
+		<div class='contenu'>
+			<h1>Calculateur de moyenne de BAC</h1>
+			<h2>Description</h2>
+			<p>Ici tu va devoir rentrer tes spécialité chosis et celle que tu a abandonnée.</p>
+			<p>Tes moyenne de tronc commun aisni que le moyenne de ton bac français de l'année dernière.</p>
+			<p>Tu peux mettre tes moyennes aux cours en questions si tu n'a pas la moyenne.</p>
+			<p><center><img src="Photos\epreuve bac.png"></center></p>
+			<h2>Calcul</h2>
+			<h3>Contrôle Continue (40%)</h3>
+			<p><label for = "LVA">LVA Anglais (coeff 5): </label>  <input id="LVA" name ="LVA" type="number" min="0" max="20" /></p>
+			<p><label for = "LVB">LVB Espagnol/Allemand (coeff 5): </label>  <input id="LVB" name ="LVB" type="number"/></p>
+			<p><label for = "HG">Histoire-Géographie (coeff 5): </label>  <input id="HG" name ="HG" type="number"/></p>
+			<p><label for = "ES">Enseignement Scientifique (coeff 5): </label>  <input id="ES" name ="ES" type="number"/></p>
+			<p><label for = "EPS">Éducation Physique et Sportive (coeff 5): </label>  <input id="EPS" name ="EPS" type="number"/></p>
+			<p><label for = "SP0">Enseignement de spécialité suivi uniquement en première (coeff 5): </label>  <input id="SP0" name ="SP0" type="number"/></p>
+			<p><label for = "B">Bulletins scolaire de première et de terminale (coeff 10): </label>  <input id="B" name ="B" type="number"/></p>
+			<h3>Épreuves terminales (60%)</h3>
+			<p><label for = "PH">Philosophie (coeff 8): </label>  <input id="PH" name ="PH" type="number" min="0" max="20" /></p>
+			<p><label for = "GO">Grand Oral (coeff 10): </label>  <input id="GO" name ="GO" type="number" min="0" max="20" /></p>
+			<p><label for = "SP1">Enseignement de spécialité 1 (coeff 16): </label>  <input id="SP1" name ="SP1" type="number" min="0" max="20" /></p>
+			<p><label for = "SP2">Enseignement de spécialité 2 (coeff 16): </label>  <input id="SP2" name ="SP2" type="number" min="0" max="20" /></p>
+			<p><label for = "FR">Français (coeff 10): </label>  <input id="FR" name ="FR" type="number" min="0" max="20" /></p>
+			<p><center><button onclick="calcul()">Calculer</button></center></p>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
