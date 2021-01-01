@@ -33,4 +33,7 @@ Remplissage de la page d'acceuil
 
 début de la création du code pour le calculateur 
 
-préparation de l'incorporation du logo qui aura lieu ce week-end
+préparation de l'incorporation du logo qui aura lieu ce week-end.
+
+### Séance des vacances(1h)
+modification du site
