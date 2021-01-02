@@ -1,10 +1,13 @@
 function ENT(page) {
 	if (page == 'CAS EP')  {window.location.href=('https://teleservices.ac-lille.fr/login/ct_logon_vk.jsp?CT_ORIG_URL=%2Fsso%2FSSO%3FSPEntityID%3Durn%3Afi%3Aent%3Alille-hdf-ts%3A1.0%26TARGET%3Dhttps%3A%2F%2Fwww.enthdf.fr%2F&ct_orig_uri=%2Fsso%2FSSO%3FSPEntityID%3Durn%3Afi%3Aent%3Alille-hdf-ts%3A1.0%26TARGET%3Dhttps%3A%2F%2Fwww.enthdf.fr%2F')}
 	else if (page == 'CAS PROF') {window.location.href=('https://eduline.ac-lille.fr/eduline_profil/anonyme/logon.html')}
+	else if (page == 'Lycée') {window.location.href=('https://nerviens-bavay.enthdf.fr/')}
 }
 
 function navig(page){
 	if (page == 'Accueil') {window.location.href=('Accueil.html')}
+	else if (page == 'Plannificateur') {window.location.href=('planificateur.html')}
+	else if (page == 'Calculateur') {window.location.href=('Calculateur.html')}
 }
 
 function vide(element){
@@ -30,6 +33,7 @@ function calcul(){
 	note_cc = [LVA, LVB, HG, ES, EPS, SP0, B];
 	name_cc = ["Langue Vivante A Anglais", "Langue Vivante B Espagnol/Allemand", "Histoire-Géographie", "Enseignement Scientifique", "Education Physique et Sportive", "Enseignement de spécialité suivi uniquement en première", "Bulletins scolaire de première et de terminale"]
 	sur_cc = [5, 5, 5, 5, 5, 5, 10]
+	error = 0
 	for (let i = 0; i <7; i = i+1) {
 		ele = note_cc[i];
 		if (0 <= ele && ele <= 20) {
@@ -38,12 +42,14 @@ function calcul(){
 			notet_cc += notele;
 			surt_cc += surele;
 		} else if (vide(ele) == false) {
+			error += 1
 			message = "La note entré en "
 			message += name_cc[i]
 			message += " n'est pas entre 0 et 20, elle a donc pas été comptabilisé."
 			alert(message)
+		} else {
+			error += 1
 		}
-		alert(notet_cc + "  " + surt_cc)
 	}
 	PH = parseFloat(document.getElementById('PH').value);
 	GO = parseFloat(document.getElementById('GO').value);
@@ -60,14 +66,23 @@ function calcul(){
 			notet_et += notele;
 			surt_et += surele;
 		} else if (vide(ele) == false) {
+			error += 1
 			message = "La note entré en "
 			message += name_cc[i]
 			message += " n'est pas entre 0 et 20, elle a donc pas été comptabilisé."
 			alert(message)
+		} else {
+			error += 1
 		}
 	}
 	moyenne = notet_cc + notet_et
 	moyenne /= (surt_cc + surt_et)
 	moyenne *= 20
 	alert("Votre moyenne au BAC est de " + moyenne + "/20. ")
+	if (error != 0) {
+		message = "Une ou plusieurs moyenne(s) n'ont pas été rempli ou correctement rempli. Il manque donc "
+		message += error
+		message += " moyenne(s)."
+		alert(message)
+	}
 }
