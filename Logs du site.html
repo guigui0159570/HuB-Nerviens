@@ -2,24 +2,27 @@
 	<head>
 		<title>HuB Nerviens - Logs du site</title>
 		<meta charset="UTF-8">
-		<link rel="icon" type="image/png" sizes="16x16" href="Photos\logo nerviens.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Photos\icone.png">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class='bandeau'>
+		<nav>
 			<table>
 				<tr>
-					<td><img src="Photos\logo nerviens.png"></td>
+					<td><img src="Photos\icone.png"></td>
 					<td><button onclick="navig('Accueil')">Accueil</button></td>
-					<td><img src="Photos\logo-neo-HDF.svg"></td>
-					<td><button onclick="ENT('CAS EP')">Élève/Parent</button></td>
-					<td><button onclick="ENT('CAS PROF')">Professeur</button></td>
+					<td><button onclick="ENT('Lycée')">Lycée</button></td>
+					<td><button onclick="ENT('CAS EP')">ENT Élève/Parent</button></td>
+					<td><button onclick="ENT('CAS PROF')">ENT Professeur</button></td>
+					<td><button onclick="navig('Calculateur')">Calculateur de moyenne de BAC</button></td>
+					<td><button onclick="navig('Plannificateur')">RDV Parents-Profs</button></td>
 				</tr>
 			</table>
-		</div>
+		</nav>
 		<div class='contenu'>
 			<h1>Logs du site</h1>
 			<p>Sur cette page vous pouvez voir l'avancement du site depuis sa création.</p>
+			<p>Vous pouvez aussi voir les logs du site sur <a href='https://github.com/guigui0159570/HuB-Nerviens'>Github</a>.</p>
 			<h2>Séance du 27 Novembre 2020</h2>
 			<p>Mise en forme du projet</p>
 			<h2>Séance du 4 décembre 2020</h2>
@@ -32,6 +35,21 @@
 				<li>Selection des image pour l'accueil du site</li>
 				<li>Mise en place des couleurs et des photo pour dynamiser le site</li>
 			</ul>
+			<h2>Séance du 16 décembre 2020</h2>
+			<ul>
+				<li>Création de la page du Calculateur</li>
+				<li>Intégration de la page</li>
+				<li>Création du logo du site</li>
+			</ul>
+			<h2>Séance du 18 décembre 2020</h2>
+			<ul>
+				<li>Création des zones de texte pour le calculateur de moyennes BAC</li>
+				<li>Remplissage de la page d'accueil</li>
+				<li>Début de la création du code pour le calculateur</li>
+				<li>Préparation de l'incorporation du logo qui aura lieu ce week-end</li>
+			</ul>
+			<h2>Séance des vacances</h2>
+			<p>Modification du site et fin des paramétrage.</p>
 		</div>
 	</body>
 	<script src="script.js"></script>
