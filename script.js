@@ -6,7 +6,6 @@ function ENT(page) {
 
 function navig(page){
 	if (page == 'Accueil') {window.location.href=('Accueil.html')}
-	else if (page == 'Plannificateur') {window.location.href=('planificateur.html')}
 	else if (page == 'Calculateur') {window.location.href=('Calculateur.html')}
 }
 
